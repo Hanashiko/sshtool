@@ -1,0 +1,20 @@
+pkgbase = sshtool
+	pkgdesc = Interactive SSH session manager with GPG-encrypted config support
+	pkgver = 0.1.0
+	pkgrel = 1
+	arch = any
+	license = MIT
+	depends = python
+	depends = gnupg
+	depends = fzf
+	optdepends = sshpass: for password-based SSH
+	optdepends = mosh: for mosh support
+	optdepends = tmate: for tmate support
+	source = sshtool
+	source = LICENSE
+	source = README.md
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = sshtool
