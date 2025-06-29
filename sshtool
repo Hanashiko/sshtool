@@ -85,7 +85,7 @@ class GPGStorage:
                 tmp_path = tmp.name
             
             result = subprocess.run([
-                'gpg', '--trust-model', 'always', '--encrypt',
+                'gpg', '--yes', '--trust-model', 'always', '--encrypt',
                 '--recipient', recipient, '--output', str(self.config_file),
                 tmp_path
             ], capture_output=True, text=True)
